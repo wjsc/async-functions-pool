@@ -1,7 +1,7 @@
 # async-functions-pool
 Minimal Async Tasks Pool Manager
 
-Usage
+## Usage
 ```
 // 1. Import module
 const pool = require('async-functions-pool');
@@ -17,4 +17,7 @@ await pool.run(3);
 console.log('All jobs have finished');
 ```
 
+## FAQs
 
+How minimal it is? 
+- 16 Lines of code and no dependencies
