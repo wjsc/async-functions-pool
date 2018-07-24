@@ -1,0 +1,33 @@
+{
+  "name": "pool",
+  "version": "1.0.0",
+  "description": "Minimal Async Tasks Pool Manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjsc/async-pool.git"
+  },
+  "keywords": [
+    "Async",
+    "tasks",
+    "promise",
+    "promises",
+    "manager",
+    "pool",
+    "window",
+    "promise",
+    "window",
+    "promise",
+    "pool",
+    "parallel"
+  ],
+  "author": "wjsc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wjsc/async-pool/issues"
+  },
+  "homepage": "https://github.com/wjsc/async-pool#readme"
+}
