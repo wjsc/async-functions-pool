@@ -12,8 +12,8 @@ pool.add(() => Promise.resolve());
 pool.add(() => Promise.resolve());
 pool.add(() => Promise.resolve());
 
-// 3. Set number of parallel jobs to 2 and run!
-await pool.run(2);
+// 3. Set number of parallel jobs and run!
+await pool.run(3);
 console.log('All jobs have finished');
 ```
 
