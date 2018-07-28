@@ -1,14 +1,16 @@
 const queue = [];
+const results = [];
 const add = fx => queue.push(fx);
 const run = async parallel => {
   const jobs = [];
   for(let i = 0 ; i < Math.min(parallel, queue.length); i ++){
     jobs.push(runJob());
   }
-  return Promise.all(jobs);
+  await Promise.all(jobs);
+  return results;
 }
 const runJob = async () => {
-  await queue.shift()();
+  results.push(await queue.shift()());
   if(queue.length){
     await runJob();
   }

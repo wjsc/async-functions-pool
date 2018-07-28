@@ -6,18 +6,23 @@ Minimal Async Tasks Pool Manager
 // 1. Import module
 const pool = require('async-functions-pool');
 
-// 2. Add functions to the queue. Each function must return a Promise.
-pool.add(() => Promise.resolve()); 
-pool.add(() => Promise.resolve());
-pool.add(() => Promise.resolve());
-pool.add(() => Promise.resolve());
+// 2. Add functions to the queue. For example:
+pool.add(() => fetch('http://someAPI.com/resource/1'));
+pool.add(() => fetch('http://someAPI.com/resource/2'));
+pool.add(() => fetch('http://someAPI.com/resource/3'));
+pool.add(() => fetch('http://someAPI.com/resource/4'));
+pool.add(() => fetch('http://someAPI.com/resource/5'));
+pool.add(() => fetch('http://someAPI.com/resource/6'));
+
 
 // 3. Set number of parallel jobs and run!
-await pool.run(3);
+const results = await pool.run(3);
 console.log('All jobs have finished');
+console.log(results);
 ```
 
 ## FAQs
 
-How minimal it is? 
-- 16 Lines of code and no dependencies
+- How minimal it is? 18 Lines of code and no dependencies
+- Can it run common sync functions? Yes
+- Which version of Node is required? > 8.0.0 because it uses async/await
