@@ -4,7 +4,7 @@ Minimal Async Tasks Pool Manager
 ## Usage
 ```
 // 1. Import module
-const pool = require('async-functions-pool');
+const pool = require('async-functions-pool')();
 
 // 2. Add functions to the queue. For example:
 pool.add(() => fetch('http://someAPI.com/resource/1'));
