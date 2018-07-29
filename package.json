@@ -1,14 +1,15 @@
 {
   "name": "async-functions-pool",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Minimal Async Functions Pool Manager",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wjsc/async-pool.git"
+    "url": "git+https://github.com/wjsc/async-functions-pool"
   },
   "keywords": [
     "Async",
@@ -18,16 +19,14 @@
     "manager",
     "pool",
     "window",
-    "promise",
-    "window",
-    "promise",
     "pool",
-    "parallel"
+    "parallel",
+    "await"
   ],
   "author": "wjsc",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wjsc/async-pool/issues"
+    "url": "https://github.com/wjsc/async-functions-pool/issues"
   },
-  "homepage": "https://github.com/wjsc/async-pool#readme"
+  "homepage": "https://github.com/wjsc/async-functions-pool#readme"
 }

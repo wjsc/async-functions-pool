@@ -16,9 +16,11 @@ pool.add(() => fetch('http://someAPI.com/resource/6'));
 
 
 // 3. Set number of parallel jobs and run!
-const results = await pool.run(3);
-console.log('All jobs have finished');
-console.log(results);
+async function foo(){
+  const results = await pool.run(3);
+  console.log('All jobs have finished');
+}
+foo();
 ```
 
 ## FAQs
