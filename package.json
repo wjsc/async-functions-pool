@@ -1,11 +1,11 @@
 {
   "name": "async-functions-pool",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Minimal Async Functions Pool Manager",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose --coverage"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,13 @@
   "bugs": {
     "url": "https://github.com/wjsc/async-functions-pool/issues"
   },
-  "homepage": "https://github.com/wjsc/async-functions-pool#readme"
+  "homepage": "https://github.com/wjsc/async-functions-pool#readme",
+  "devDependencies": {
+    "jest": "^23.4.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  }
 }

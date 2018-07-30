@@ -1,18 +1,22 @@
-const queue = [];
-const results = [];
-const add = fx => queue.push(fx);
-const run = async parallel => {
+const run = queue => async parallel => {
+  const results = [];
   const jobs = [];
   for(let i = 0 ; i < Math.min(parallel, queue.length); i ++){
-    jobs.push(runJob());
+    jobs.push(runJob(queue, results));
   }
   await Promise.all(jobs);
   return results;
 }
-const runJob = async () => {
+const runJob = async (queue, results) => {
   results.push(await queue.shift()());
   if(queue.length){
-    await runJob();
+    await runJob(queue, results);
   }
 };
-module.exports = { add, run }
+module.exports = () => { 
+  const queue = []; 
+  return { 
+    add: fx => queue.push(fx),
+    run: run(queue) 
+  }
+}
