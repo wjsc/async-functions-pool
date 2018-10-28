@@ -1,6 +1,8 @@
 # async-functions-pool
 Minimal Async Tasks Pool Manager
 
+[![NPM](https://nodei.co/npm/async-functions-pool.png?downloads)](https://nodei.co/npm/async-functions-pool)
+
 ## Usage
 ```
 // 1. Import module and execute it to create a pool
