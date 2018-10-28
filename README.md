@@ -1,7 +1,7 @@
+[![NPM](https://nodei.co/npm/async-functions-pool.png)](https://nodei.co/npm/async-functions-pool)
+
 # async-functions-pool
 Minimal Async Tasks Pool Manager
-
-[![NPM](https://nodei.co/npm/async-functions-pool.png?downloads)](https://nodei.co/npm/async-functions-pool)
 
 ## Usage
 ```
