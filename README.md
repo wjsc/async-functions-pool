@@ -1,3 +1,11 @@
+![Current Version](https://img.shields.io/npm/v/async-functions-pool.svg)
+![NPM Minified size](https://img.shields.io/bundlephobia/min/async-functions-pool.svg)
+![Github Code Size](https://img.shields.io/github/languages/code-size/wjsc/async-functions-pool.svg)
+![Downloads/Week](https://img.shields.io/npm/dw/async-functions-pool.svg)
+![Issues](https://img.shields.io/github/issues/wjsc/async-functions-pool.svg)
+![License](https://img.shields.io/github/license/wjsc/async-functions-pool.svg)
+![Contributors](https://img.shields.io/github/contributors/wjsc/async-functions-pool.svg)
+
 [![NPM](https://nodei.co/npm/async-functions-pool.png)](https://nodei.co/npm/async-functions-pool)
 
 # async-functions-pool
